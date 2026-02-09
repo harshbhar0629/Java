@@ -1,5 +1,6 @@
 package Core;
 
+// by default it extends object property
 class Parent{
     int age;
     void disp(){
