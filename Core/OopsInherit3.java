@@ -22,7 +22,7 @@ class parent{
 }
 
 class Child extends parent{
-    string name;
+    String name;
     Child(){}
     void update(String name){
         upadteName(name);
