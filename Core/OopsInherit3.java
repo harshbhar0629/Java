@@ -4,6 +4,7 @@ package Core;
 // protected member/method can access by child class or within class
 // public member/method can access by all either child or object of child class or own object 
 // using super keyword we can access the instance variable of immediate parent of child class
+
 class parent{
     private String name;
     int val;
