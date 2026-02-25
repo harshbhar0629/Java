@@ -12,5 +12,6 @@ public class DS06LinkedList {
         System.out.println(l1.get(2));
         System.out.println(l1.peek());
         System.out.println(l1);
+        System.err.println(l1.peek());
     }
 }
