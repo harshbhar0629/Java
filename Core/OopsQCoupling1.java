@@ -23,7 +23,7 @@ class FirstFlight implements IDeliveryService {
         System.out.println("FirstFlight is delivering the product " + amount);
         return true;
     }
-}
+}ques
 
 class Amazon {
     private IDeliveryService deliveryService;
