@@ -22,9 +22,9 @@ class C implements A, B {
 
 public class ques2 {
     public static void main(String[] args) {
-        C c = new C();
-        System.out.println(c.add(3, 1));
+        B c = new C();
+        // System.out.println(c.add(3, 1));
         System.out.println(c.sub(3, 1));
-        System.out.println(c.mul(3, 1));
+        // System.out.println(c.mul(3, 1));
     }
 }
