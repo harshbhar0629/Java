@@ -1,26 +1,31 @@
 package Core;
 
 import java.util.ArrayList;
+import java.util.Vector;
 
-class Array{
-    // it generates warning because we are not using generics, so it is not type safe
+class Array {
+    // it generates warning because we are not using generics, so it is not type
+    // safe
     // void ArrayListImplementation(){
-    //     ArrayList al = new ArrayList(); // multitype data stored because it stored the value in object class
-    //     al.add(1901);
-    //     al.add(1902);
-    //     al.add("al");
-    //     al.add(true);
+    // ArrayList al = new ArrayList(); // multitype data stored because it stored
+    // the value in object class
+    // al.add(1901);
+    // al.add(1902);
+    // al.add("al");
+    // al.add(true);
 
-    //     System.out.println(al);
+    // System.out.println(al);
 
     // }
 
-    void ArrayListImplementationWithGenerics(){
+    void ArrayListImplementationWithGenerics() {
         ArrayList<Integer> al = new ArrayList<Integer>(); // it is type safe because we are using generics
         al.add(1901);
         al.add(1902);
-        // al.add("al"); // it will give compile time error because we are using generics
-        // al.add(true); // it will give compile time error because we are using generics
+        // al.add("al"); // it will give compile time error because we are using
+        // generics
+        // al.add(true); // it will give compile time error because we are using
+        // generics
 
         System.out.println(al);
 
@@ -30,7 +35,7 @@ class Array{
         System.out.println(al1);
     }
 
-    void ArrayListPlayingWithIndex(){
+    void ArrayListPlayingWithIndex() {
         ArrayList<Integer> al = new ArrayList<Integer>();
         al.add(1901);
         al.add(1902);
@@ -39,7 +44,7 @@ class Array{
         al.add(1905);
 
         System.out.println(al);
-        
+
         // adding element at specific index
         al.add(2, 100);
         System.out.println(al);
@@ -52,7 +57,8 @@ class Array{
         System.out.println(al.indexOf(1903)); // it will return the index of the element
 
         System.out.println(al.toString());
-        // System.out.println(al.remove(1000)); // it will return false because the element is not present in the list
+        // System.out.println(al.remove(1000)); // it will return false because the
+        // element is not present in the list
         System.out.println(al.contains(100));
         ArrayList<Integer> al2 = new ArrayList<Integer>();
         al2.add(100);
@@ -72,5 +78,18 @@ public class Collection01Array {
         System.out.println("");
         System.out.println("ArrayList Playing with Index");
         array.ArrayListPlayingWithIndex();
+
+        Vector<Integer> v = new Vector<Integer>();
+        v.add(2);
+        v.add(22);
+        v.add(222);
+        v.add(2222);
+        System.out.println(v);
+        v.add(1,90);
+        v.addElement(11);
+        v.addFirst(123);
+        v.addLast(1234);
+        v.removeElement(1234);
+
     }
 }
